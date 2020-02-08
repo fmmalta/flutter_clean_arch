@@ -13,4 +13,7 @@ class NumberTriviaModel extends NumberTriviaEntity {
       number: (json['number'] as num).toInt(),
     );
   }
+
+  Map<String, dynamic> toJson() =>
+      <String, dynamic>{'text': text, 'number': number};
 }
