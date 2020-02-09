@@ -1,8 +1,8 @@
 import 'package:equatable/equatable.dart';
 import 'package:meta/meta.dart';
 
-class NumberTriviaEntity extends Equatable {
-  NumberTriviaEntity({@required this.text, @required this.number});
+class NumberTrivia extends Equatable {
+  NumberTrivia({@required this.text, @required this.number});
 
   final String text;
   final int number;

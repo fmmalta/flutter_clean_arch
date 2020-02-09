@@ -6,13 +6,13 @@ import 'package:dartz/dartz.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 
-class GetConcreteNumberTrivia implements UseCase<NumberTriviaEntity, Params> {
+class GetConcreteNumberTrivia implements UseCase<NumberTrivia, Params> {
   GetConcreteNumberTrivia(this.repository);
 
   final NumberTriviaRepository repository;
 
   @override
-  Future<Either<Failure, NumberTriviaEntity>> call(params) async {
+  Future<Either<Failure, NumberTrivia>> call(params) async {
     return await repository.getConcreteNumberTrivia(params.number);
   }
 }

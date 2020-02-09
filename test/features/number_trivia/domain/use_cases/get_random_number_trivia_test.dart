@@ -16,9 +16,7 @@ void main() {
     mockNumberTriviaRepository = MockNumberTriviaRepository();
     usecase = GetRandomNumberTrivia(mockNumberTriviaRepository);
   });
-
-  final tNumber = 1;
-  final tNumberTrivia = NumberTriviaEntity(text: 'test', number: 1);
+  final tNumberTrivia = NumberTrivia(text: 'test', number: 1);
   test('Should get trivia random number from the repository', () async {
     //arrange
     when(mockNumberTriviaRepository.getRandomNumberTrivia())

@@ -4,13 +4,13 @@ import 'package:clean_arch/features/number_trivia/domain/entities/number_trivia.
 import 'package:clean_arch/features/number_trivia/domain/repositories/number_trivia_repository.dart';
 import 'package:dartz/dartz.dart';
 
-class GetRandomNumberTrivia implements UseCase<NumberTriviaEntity, NoParams> {
+class GetRandomNumberTrivia implements UseCase<NumberTrivia, NoParams> {
   GetRandomNumberTrivia(this.repository);
 
   final NumberTriviaRepository repository;
 
   @override
-  Future<Either<Failure, NumberTriviaEntity>> call(NoParams params) async {
+  Future<Either<Failure, NumberTrivia>> call(NoParams params) async {
     return await repository.getRandomNumberTrivia();
   }
 }

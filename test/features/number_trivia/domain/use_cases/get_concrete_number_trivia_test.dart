@@ -17,7 +17,7 @@ void main() {
   });
 
   final tNumber = 1;
-  final tNumberTrivia = NumberTriviaEntity(text: 'test', number: 1);
+  final tNumberTrivia = NumberTrivia(text: 'test', number: 1);
   test('Should get trivia for the number from the repository', () async {
     //arrange
     when(mockNumberTriviaRepository.getConcreteNumberTrivia(any))

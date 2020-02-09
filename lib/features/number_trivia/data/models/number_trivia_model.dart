@@ -1,6 +1,6 @@
 import 'package:clean_arch/features/number_trivia/domain/entities/number_trivia.dart';
 
-class NumberTriviaModel extends NumberTriviaEntity {
+class NumberTriviaModel extends NumberTrivia {
   final String text;
   final int number;
 

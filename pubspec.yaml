@@ -26,6 +26,7 @@ dependencies:
   get_it: ^3.1.0
   # Bloc for state management
   flutter_bloc: ^3.2.0
+  bloc: ^3.0.0
   # Value equality
   equatable: ^1.0.3
   # Functional programming thingies
